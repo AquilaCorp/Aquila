@@ -578,16 +578,52 @@ social-links a:hover {
     color: #e0c000;
 }
 
-.language-button {
-    padding:10px;
-    background-color: #ffd700;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
+/* Media query pour les appareils avec un écran de moins de 600px de large */
+@media only screen and (max-width: 600px) {
+    /* Ajuster la taille du texte pour qu'il soit plus lisible sur mobile */
+    body {
+        font-size: 16px;
+    }
 
-.language-button:hover {
-    background-color: white;
+    /* Adapter la largeur des sections à 100% pour éviter le débordement */
+    .container, .section, .header, .footer {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Redimensionner les images pour qu'elles ne débordent pas de l'écran */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Centrer le contenu textuel */
+    .text-content {
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Modifier les colonnes pour qu'elles s'affichent en ligne (une en dessous de l'autre) */
+    .columns {
+        display: block;
+        width: 100%;
+    }
+
+    /* Réduire la taille des marges et des espacements */
+    .margin {
+        margin: 5px;
+    }
+
+    /* Exemple de navigation qui passe en verticale pour mobile */
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Boutons plus grands pour une meilleure accessibilité */
+    button {
+        width: 100%;
+        padding: 15px;
+    }
 }
