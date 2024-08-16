@@ -2,15 +2,17 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-image:url('./background.png');
+    background-image: url('./background.png');
     background-size: 60%;
+    background-position: center;
+
     color: #d4af37; /* Couleur dorée */
 }
 
 /* Header et Navigation */
 header {
     background-color: black;
-    padding: 10px 30px;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,13 +29,13 @@ header.black-bg {
 }
 
 .logo img {
-    height: 150px;
+    height: 10rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
@@ -43,69 +45,69 @@ nav ul li a {
     color: #ffd700;
     font-weight: 500;
     position: relative;
-    padding: 5px 0;
+    padding: 0.5rem 0;
     transition: color 0.3s ease;
 }
 
 nav ul li a::after {
     content: '';
     width: 0;
-    height: 2px;
+    height: 0.1rem;
     background-color: #ffd700;
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -0.5rem;
     transition: width 0.4s ease, opacity 0.4s ease;
-
 }
 
 nav ul li a:hover::after {
     width: 100%;
     opacity: 1;
 }
+
 h1 {
     color: #ffd700;
     text-align: center;
-    font-size: 2.5em;
-    margin: 50px 0;
-    letter-spacing: 2px;
-        }
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    letter-spacing: 0.2rem;
+}
 
 h2 {
     color: #ffd700;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 section {
-    padding: 50px 20px;
-    max-width: 1200px;
+    padding: 3rem 1rem;
+    max-width: 90%;
     margin: auto;
     background: linear-gradient(135deg, #111111, #0b0b0b);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-    border-radius: 8px;
-    border: 1px solid #ffd700;
-    margin-top:150px;
+    box-shadow: 0 0 1.25rem rgba(255, 215, 0, 0.3);
+    border-radius: 0.5rem;
+    border: 0.1rem solid #ffd700;
+    margin-top: 10rem;
 }
 
 .step {
-    margin: 50px 0;
-    padding: 20px;
+    margin: 3rem 0;
+    padding: 1.5rem;
     background-color: #1a1a1a;
-    border-left: 5px solid #ffd700;
-    border-radius: 5px;
+    border-left: 0.4rem solid #ffd700;
+    border-radius: 0.5rem;
 }
 
 .step h3 {
     color: #ffd700;
-    font-size: 1.8em;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
 
 .step p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
     text-align: justify;
     color: #f0f0f0;
 }
@@ -113,14 +115,14 @@ section {
 .site-footer {
     background-color: #000000;
     color: #ffd700;
-    padding: 40px 20px;
+    padding: 2.5rem 1rem;
     font-family: 'Arial', sans-serif;
-    border-top: 2px solid #ffd700;
+    border-top: 0.1rem solid #ffd700;
     text-align: center;
 }
 
 .footer-container {
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -128,17 +130,17 @@ section {
 }
 
 .footer-logo img {
-    height: 200px;
-    margin-bottom: 20px;
+    height: 12.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer-contact {
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .footer-contact p {
-    margin: 5px 0;
-    font-size: 16px;
+    margin: 0.3rem 0;
+    font-size: 1rem;
 }
 
 .footer-contact a {
@@ -152,64 +154,38 @@ section {
 }
 
 .social-icon {
-    width: 35px;
-    height: 35px;
-    margin-right: 0px;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0rem;
     vertical-align: middle;
 }
 
 .footer-rights {
-    font-size: 14px;
-    margin-top: 10px;
-    color:white;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: white;
 }
 
 /* Media query pour les appareils avec un écran de moins de 600px de large */
-@media only screen and (max-width: 600px) {
-    /* Ajuster la taille du texte pour qu'il soit plus lisible sur mobile */
-    body {
-        font-size: 16px;
-    }
-
-    /* Adapter la largeur des sections à 100% pour éviter le débordement */
-    .container, .section, .header, .footer {
-        width: 100%;
-        padding: 10px;
-        margin: 0;
-    }
-
-    /* Redimensionner les images pour qu'elles ne débordent pas de l'écran */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Centrer le contenu textuel */
-    .text-content {
-        text-align: center;
-        padding: 10px;
-    }
-
-    /* Modifier les colonnes pour qu'elles s'affichent en ligne (une en dessous de l'autre) */
-    .columns {
-        display: block;
-        width: 100%;
-    }
-
-    /* Réduire la taille des marges et des espacements */
-    .margin {
-        margin: 5px;
-    }
-
-    /* Exemple de navigation qui passe en verticale pour mobile */
-    .navigation {
-        display: flex;
+@media only screen and (max-width: 37.5rem) {
+    header {
         flex-direction: column;
+        padding: 1rem;
     }
 
-    /* Boutons plus grands pour une meilleure accessibilité */
-    button {
-        width: 100%;
-        padding: 15px;
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+        margin-top: 12rem;
+    }
+
+    .footer-container {
+        max-width: 95%;
     }
 }
+
