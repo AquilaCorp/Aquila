@@ -1,0 +1,166 @@
+/* Styles de base */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image:url('./background.png');
+    background-size: 60%;
+    color: #d4af37; /* Couleur dorée */
+}
+
+/* Header et Navigation */
+header {
+    background-color: black;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+header.black-bg {
+    background-color: #000000;
+}
+
+.logo img {
+    height: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ffd700;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.4s ease, opacity 0.4s ease;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+h1 {
+    color: #ffd700;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 50px 0;
+    letter-spacing: 2px;
+        }
+
+h2 {
+    color: #ffd700;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(135deg, #111111, #0b0b0b);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    border: 1px solid #ffd700;
+    margin-top:150px;
+}
+
+.step {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-left: 5px solid #ffd700;
+    border-radius: 5px;
+}
+
+.step h3 {
+    color: #ffd700;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #f0f0f0;
+}
+
+.site-footer {
+    background-color: #000000;
+    color: #ffd700;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    border-top: 2px solid #ffd700;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-contact a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-contact a:hover {
+    color: #e0e0e0;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+.footer-rights {
+    font-size: 14px;
+    margin-top: 10px;
+    color:white;
+}
+    

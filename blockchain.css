@@ -1,0 +1,207 @@
+/* Styles de base */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image:url('./background.png');
+    background-size: 60%;
+    color: #d4af37; /* Couleur dorée */
+}
+
+/* Header et Navigation */
+header {
+    background-color: black;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+header.black-bg {
+    background-color: #000000;
+}
+
+.logo img {
+    height: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #ffd700;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.4s ease, opacity 0.4s ease;
+
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+/* Assurez-vous que ce CSS est inclus dans le fichier principal ou lié correctement */
+
+/* Style pour la section blockchain */
+.blockchain-section {
+    background: #000000; /* Fond noir pour la section */
+    color: #ffd700; /* Couleur du texte doré */
+    padding: 60px 0; /* Espacement vertical autour de la section */
+    border-radius: 12px;
+    margin-top:150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Ombre subtile pour la profondeur */
+}
+
+.blockchain-section .container {
+    max-width: 1200px; /* Largeur maximale du container */
+    margin: 0 auto; /* Centrage du container */
+    padding: 0 20px; /* Espacement horizontal */
+}
+
+.blockchain-section h1 {
+    text-align: center;
+    color: #ffd700; /* Couleur dorée pour le titre */
+    margin-bottom: 30px; /* Espacement sous le titre */
+    font-size: 2.5rem; /* Taille du texte du titre */
+    font-weight: 700; /* Poids du texte du titre */
+}
+
+.resources-content {
+    background: #1a1a1a; /* Fond sombre pour le contenu */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Ombre pour le contenu */
+}
+
+.resource-item {
+    margin-bottom: 40px; /* Espacement entre les éléments */
+}
+
+.resource-item .button-link {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem; /* Taille du texte du bouton */
+    color: #ffd700; /* Couleur du texte du bouton */
+    background-color: #000000; /* Fond noir pour le bouton */
+    border: 2px solid #ffd700; /* Bordure dorée pour le bouton */
+    border-radius: 8px; /* Coins arrondis pour le bouton */
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600; /* Poids du texte du bouton */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Effet de transition */
+}
+
+.resource-item .button-link:hover {
+    background-color: #ffd700; /* Fond doré au survol */
+    color: #000000; /* Texte noir au survol */
+}
+
+.resource-item h1 {
+    font-size: 2rem; /* Taille du texte des sous-titres */
+    color: #ffd700; /* Couleur dorée pour les sous-titres */
+    margin-bottom: 20px; /* Espacement sous les sous-titres */
+    font-weight: 600;
+}
+
+.resource-item p {
+    font-size: 1rem; /* Taille du texte des paragraphes */
+    color: #e0e0e0; /* Couleur claire pour le texte des paragraphes */
+    line-height: 1.6; /* Hauteur de ligne pour la lisibilité */
+    margin-bottom: 20px; /* Espacement sous les paragraphes */
+}
+
+.resource-item h2 {
+    font-size: 1.5rem; /* Taille du texte des sous-titres de niveau 2 */
+    color: #ffd700; /* Couleur dorée pour les sous-titres de niveau 2 */
+    margin-bottom: 15px; /* Espacement sous les sous-titres de niveau 2 */
+    font-weight: 600;
+}
+
+.resource-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resource-item ul li {
+    font-size: 1rem; /* Taille du texte des éléments de liste */
+    color: #e0e0e0; /* Couleur claire pour le texte des éléments de liste */
+    margin-bottom: 10px; /* Espacement sous les éléments de liste */
+}
+
+
+.site-footer {
+    background-color: #000000;
+    color: #ffd700;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    border-top: 2px solid #ffd700;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-contact a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-contact a:hover {
+    color: #e0e0e0;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 0px;
+    vertical-align: middle;
+}
+
+.footer-rights {
+    font-size: 14px;
+    margin-top: 10px;
+    color:white;
+}
